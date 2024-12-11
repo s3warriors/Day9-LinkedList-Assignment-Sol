@@ -71,6 +71,15 @@ class LinkedList<T extends Comparable<T>> {
         }
         return false;
     }
+
+    // UC8: Insert after searching
+    public void insertAfterSearch(T key, T data) {
+        if (search(key)) {
+            insertAfter(key, data);
+        }
+    }
+
+
     public void printList() {
         Node<T> temp = head;
         while (temp != null) {

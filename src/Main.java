@@ -37,6 +37,11 @@ public class Main {
 
         // UC7: Search for a node
         System.out.println("Is 30 in the list? " + list.search(30));
+
+        // UC8: Insert after search
+        list.insertAfterSearch(30, 45);
+        System.out.println("LinkedList after UC8:");
+        list.printList();
     }
 }
 
