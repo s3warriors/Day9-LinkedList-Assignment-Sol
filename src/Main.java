@@ -42,6 +42,12 @@ public class Main {
         list.insertAfterSearch(30, 45);
         System.out.println("LinkedList after UC8:");
         list.printList();
+
+        // UC9: Delete an element and show size
+        list.delete(45);
+        System.out.println("LinkedList after UC9:");
+        list.printList();
+        System.out.println("Size of LinkedList: " + list.size());
     }
 }
 

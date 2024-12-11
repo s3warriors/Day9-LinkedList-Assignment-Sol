@@ -79,6 +79,33 @@ class LinkedList<T extends Comparable<T>> {
         }
     }
 
+    // UC9: Delete and show size
+    public void delete(T key) {
+        if (head == null) return;
+        if (head.data.equals(key)) {
+            head = head.next;
+            return;
+        }
+        Node<T> temp = head;
+        while (temp.next != null && !temp.next.data.equals(key)) {
+            temp = temp.next;
+        }
+        if (temp.next != null) {
+            temp.next = temp.next.next;
+        }
+    }
+
+    public int size() {
+        int count = 0;
+        Node<T> temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+
 
     public void printList() {
         Node<T> temp = head;
