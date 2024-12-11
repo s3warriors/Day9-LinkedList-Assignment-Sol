@@ -25,11 +25,11 @@ public class Main {
         System.out.println("LinkedList after UC4:");
         list.printList();
 
-
-        // UC3: Append elements
-        list.append(85);
-        System.out.println("LinkedList after UC3:");
+        // UC5: Delete the first element
+        list.pop();
+        System.out.println("LinkedList after UC5:");
         list.printList();
+
     }
 }
 
