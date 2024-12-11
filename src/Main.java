@@ -30,6 +30,10 @@ public class Main {
         System.out.println("LinkedList after UC5:");
         list.printList();
 
+        // UC6: Delete the last element
+        list.popLast();
+        System.out.println("LinkedList after UC6:");
+        list.printList();
     }
 }
 
