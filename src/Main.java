@@ -48,6 +48,11 @@ public class Main {
         System.out.println("LinkedList after UC9:");
         list.printList();
         System.out.println("Size of LinkedList: " + list.size());
+
+        // UC10: Sort the linked list
+        list.sort();
+        System.out.println("LinkedList after UC10:");
+        list.printList();
     }
 }
 

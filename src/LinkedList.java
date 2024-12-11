@@ -95,6 +95,20 @@ class LinkedList<T extends Comparable<T>> {
         }
     }
 
+
+    // UC10: Sort the linked list
+    public void sort() {
+        if (head == null || head.next == null) return;
+        for (Node<T> i = head; i.next != null; i = i.next) {
+            for (Node<T> j = i.next; j != null; j = j.next) {
+                if (i.data.compareTo(j.data) > 0) {
+                    T temp = i.data;
+                    i.data = j.data;
+                    j.data = temp;
+                }
+            }
+        }
+    }
     public int size() {
         int count = 0;
         Node<T> temp = head;
