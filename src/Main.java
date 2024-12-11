@@ -15,6 +15,16 @@ public class Main {
         list.addFirst(15);
         System.out.println("LinkedList after UC2:");
         list.printList();
+        // UC3: Append elements
+        list.append(85);
+        System.out.println("LinkedList after UC3:");
+        list.printList();
+
+        // UC4: Insert element in between
+        list.insertAfter(30, 40);
+        System.out.println("LinkedList after UC4:");
+        list.printList();
+
 
         // UC3: Append elements
         list.append(85);

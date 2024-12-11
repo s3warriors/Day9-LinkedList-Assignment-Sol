@@ -14,6 +14,7 @@ class LinkedList<T extends Comparable<T>> {
             temp.next = newNode;
         }
     }
+
     // UC2: Add elements to the beginning of the list
     public void addFirst(T data) {
         Node<T> newNode = new Node<>(data);
@@ -24,6 +25,19 @@ class LinkedList<T extends Comparable<T>> {
     // UC3: Append elements to the list
     public void append(T data) {
         add(data);
+    }
+
+    // UC4: Insert element in between
+    public void insertAfter(T key, T data) {
+        Node<T> temp = head;
+        while (temp != null && !temp.data.equals(key)) {
+            temp = temp.next;
+        }
+        if (temp != null) {
+            Node<T> newNode = new Node<>(data);
+            newNode.next = temp.next;
+            temp.next = newNode;
+        }
     }
 
 
