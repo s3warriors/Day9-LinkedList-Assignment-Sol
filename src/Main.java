@@ -11,7 +11,14 @@ public class Main {
         System.out.println("LinkedList after UC1:");
         list.printList();
 
+        // UC2: Add elements to the beginning
+        list.addFirst(15);
+        System.out.println("LinkedList after UC2:");
+        list.printList();
+
 
     }
 }
+
+
 
