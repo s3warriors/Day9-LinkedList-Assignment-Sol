@@ -16,9 +16,10 @@ public class Main {
         System.out.println("LinkedList after UC2:");
         list.printList();
 
-
+        // UC3: Append elements
+        list.append(85);
+        System.out.println("LinkedList after UC3:");
+        list.printList();
     }
 }
-
-
 

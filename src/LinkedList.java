@@ -14,12 +14,16 @@ class LinkedList<T extends Comparable<T>> {
             temp.next = newNode;
         }
     }
-
     // UC2: Add elements to the beginning of the list
     public void addFirst(T data) {
         Node<T> newNode = new Node<>(data);
         newNode.next = head;
         head = newNode;
+    }
+
+    // UC3: Append elements to the list
+    public void append(T data) {
+        add(data);
     }
 
 
