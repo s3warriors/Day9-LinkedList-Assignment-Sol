@@ -34,6 +34,9 @@ public class Main {
         list.popLast();
         System.out.println("LinkedList after UC6:");
         list.printList();
+
+        // UC7: Search for a node
+        System.out.println("Is 30 in the list? " + list.search(30));
     }
 }
 
