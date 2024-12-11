@@ -54,5 +54,7 @@ public class Main {
         System.out.println("LinkedList after UC10:");
         list.printList();
     }
+
 }
+
 
